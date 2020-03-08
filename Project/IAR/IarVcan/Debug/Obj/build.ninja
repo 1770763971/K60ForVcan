@@ -1,0 +1,30 @@
+#Generating source browse information for project IarVcan
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build Image_Processing.pbi : index Image_Processing.xcl
+build Screen.pbi : index Screen.xcl
+build main.pbi : index main.xcl
+build MK60_it.pbi : index MK60_it.xcl
+build IarVcan.pbd : link Image_Processing.pbi Screen.pbi main.pbi MK60_it.pbi
+build IarVcan.pbw : browsedata IarVcan.pbd
+
+

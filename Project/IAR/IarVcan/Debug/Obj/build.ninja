@@ -20,11 +20,67 @@ rule browsedata
 
 
 #Build steps
+build misc.pbi : index misc.xcl
+build MK60_adc.pbi : index MK60_adc.xcl
+build MK60_can.pbi : index MK60_can.xcl
+build MK60_conf.pbi : index MK60_conf.xcl
+build MK60_dac.pbi : index MK60_dac.xcl
+build MK60_dma.pbi : index MK60_dma.xcl
+build MK60_DWT.pbi : index MK60_DWT.xcl
+build MK60_flash.pbi : index MK60_flash.xcl
+build MK60_flexbus.pbi : index MK60_flexbus.xcl
+build MK60_ftm.pbi : index MK60_ftm.xcl
+build MK60_gpio.pbi : index MK60_gpio.xcl
+build MK60_i2c.pbi : index MK60_i2c.xcl
+build MK60_lptmr.pbi : index MK60_lptmr.xcl
+build MK60_mcg.pbi : index MK60_mcg.xcl
+build MK60_PIT.pbi : index MK60_PIT.xcl
+build MK60_port.pbi : index MK60_port.xcl
+build MK60_rtc.pbi : index MK60_rtc.xcl
+build MK60_spi.pbi : index MK60_spi.xcl
+build MK60_SysTick.pbi : index MK60_SysTick.xcl
+build MK60_uart.pbi : index MK60_uart.xcl
+build MK60_wdog.pbi : index MK60_wdog.xcl
+build vectors.pbi : index vectors.xcl
+build system_MK60DZ10.pbi : index system_MK60DZ10.xcl
+build VCAN_ASCII.pbi : index VCAN_ASCII.xcl
+build VCAN_BMP.pbi : index VCAN_BMP.xcl
+build VCAN_camera.pbi : index VCAN_camera.xcl
+build VCAN_computer.pbi : index VCAN_computer.xcl
+build vcan_img2sd.pbi : index vcan_img2sd.xcl
+build VCAN_key.pbi : index VCAN_key.xcl
+build VCAN_key_event.pbi : index VCAN_key_event.xcl
+build VCAN_LCD.pbi : index VCAN_LCD.xcl
+build VCAN_LCD_CH.pbi : index VCAN_LCD_CH.xcl
+build VCAN_LCD_ILI9325.pbi : index VCAN_LCD_ILI9325.xcl
+build VCAN_LCD_ILI9341.pbi : index VCAN_LCD_ILI9341.xcl
+build VCAN_LCD_ST7735R.pbi : index VCAN_LCD_ST7735R.xcl
+build VCAN_LCD_ST7735S.pbi : index VCAN_LCD_ST7735S.xcl
+build VCAN_LED.pbi : index VCAN_LED.xcl
+build VCAN_MMA7455.pbi : index VCAN_MMA7455.xcl
+build VCAN_NRF24L0.pbi : index VCAN_NRF24L0.xcl
+build VCAN_NRF24L0_MSG.pbi : index VCAN_NRF24L0_MSG.xcl
+build VCAN_OV7725_Eagle.pbi : index VCAN_OV7725_Eagle.xcl
+build VCAN_OV7725_Wolf.pbi : index VCAN_OV7725_Wolf.xcl
+build VCAN_RTC_count.pbi : index VCAN_RTC_count.xcl
+build VCAN_SCCB.pbi : index VCAN_SCCB.xcl
+build vcan_sd_app.pbi : index vcan_sd_app.xcl
+build Vcan_touch.pbi : index Vcan_touch.xcl
+build VCAN_TSL1401.pbi : index VCAN_TSL1401.xcl
+build VCAN_UI_VAR.pbi : index VCAN_UI_VAR.xcl
 build Image_Processing.pbi : index Image_Processing.xcl
 build Screen.pbi : index Screen.xcl
 build main.pbi : index main.xcl
 build MK60_it.pbi : index MK60_it.xcl
-build IarVcan.pbd : link Image_Processing.pbi Screen.pbi main.pbi MK60_it.pbi
+build IarVcan_part0.pbi : link misc.pbi MK60_adc.pbi MK60_can.pbi MK60_conf.pbi MK60_dac.pbi MK60_dma.pbi MK60_DWT.pbi
+build IarVcan_part1.pbi : link MK60_flash.pbi MK60_flexbus.pbi MK60_ftm.pbi MK60_gpio.pbi MK60_i2c.pbi MK60_lptmr.pbi MK60_mcg.pbi
+build IarVcan_part2.pbi : link MK60_PIT.pbi MK60_port.pbi MK60_rtc.pbi MK60_spi.pbi MK60_SysTick.pbi MK60_uart.pbi MK60_wdog.pbi
+build IarVcan_part3.pbi : link vectors.pbi system_MK60DZ10.pbi VCAN_ASCII.pbi VCAN_BMP.pbi VCAN_camera.pbi VCAN_computer.pbi vcan_img2sd.pbi
+build IarVcan_part4.pbi : link VCAN_key.pbi VCAN_key_event.pbi VCAN_LCD.pbi VCAN_LCD_CH.pbi VCAN_LCD_ILI9325.pbi VCAN_LCD_ILI9341.pbi VCAN_LCD_ST7735R.pbi
+build IarVcan_part5.pbi : link VCAN_LCD_ST7735S.pbi VCAN_LED.pbi VCAN_MMA7455.pbi VCAN_NRF24L0.pbi VCAN_NRF24L0_MSG.pbi VCAN_OV7725_Eagle.pbi VCAN_OV7725_Wolf.pbi
+build IarVcan_part6.pbi : link VCAN_RTC_count.pbi VCAN_SCCB.pbi vcan_sd_app.pbi Vcan_touch.pbi VCAN_TSL1401.pbi VCAN_UI_VAR.pbi Image_Processing.pbi
+build IarVcan_part7.pbi : link Screen.pbi main.pbi MK60_it.pbi
+build IarVcan.pbd : link IarVcan_part0.pbi IarVcan_part1.pbi IarVcan_part2.pbi IarVcan_part3.pbi IarVcan_part4.pbi IarVcan_part5.pbi IarVcan_part6.pbi IarVcan_part7.pbi
 build IarVcan.pbw : browsedata IarVcan.pbd
 
 

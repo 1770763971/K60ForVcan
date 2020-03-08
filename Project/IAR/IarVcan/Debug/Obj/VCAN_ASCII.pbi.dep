@@ -1,1 +1,2 @@
-VCAN_ASCII.pbi: D:\Users\17707\Desktop\VCAN\Libralies\Vcan\VCAN_ASCII.c
+VCAN_ASCII.pbi: \
+  D:\Users\17707\Desktop\K60ForVcan\Libraries\Vcan\VCAN_ASCII.c

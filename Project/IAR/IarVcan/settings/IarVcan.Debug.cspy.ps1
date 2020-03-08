@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench\common\bin\cspybat" -f "D:\Users\17707\Desktop\VCAN\Project\IAR\IarVcan\settings\IarVcan.Debug.general.xcl" --backend -f "D:\Users\17707\Desktop\VCAN\Project\IAR\IarVcan\settings\IarVcan.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench\common\bin\cspybat" -f "D:\Users\17707\Desktop\K60ForVcan\Project\IAR\IarVcan\settings\IarVcan.Debug.general.xcl" --backend -f "D:\Users\17707\Desktop\K60ForVcan\Project\IAR\IarVcan\settings\IarVcan.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench\common\bin\cspybat" -f "D:\Users\17707\Desktop\VCAN\Project\IAR\IarVcan\settings\IarVcan.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\Users\17707\Desktop\VCAN\Project\IAR\IarVcan\settings\IarVcan.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench\common\bin\cspybat" -f "D:\Users\17707\Desktop\K60ForVcan\Project\IAR\IarVcan\settings\IarVcan.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\Users\17707\Desktop\K60ForVcan\Project\IAR\IarVcan\settings\IarVcan.Debug.driver.xcl" 
 }

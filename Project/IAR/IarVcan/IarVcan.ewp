@@ -347,15 +347,14 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state>$PROJ_DIR$\..\..\..\Libralies\Chip</state>
-                    <state>$PROJ_DIR$\..\..\..\Libralies\FatFs</state>
-                    <state>$PROJ_DIR$\..\..\..\Libralies\Startup\IAR</state>
-                    <state>$PROJ_DIR$\..\..\..\Libralies\Startup\kinetis</state>
-                    <state>$PROJ_DIR$\..\..\..\Libralies\Vcan</state>
+                    <state>$PROJ_DIR$\..\..\..\Libraries\Chip</state>
+                    <state>$PROJ_DIR$\..\..\..\Libraries\FatFs</state>
+                    <state>$PROJ_DIR$\..\..\..\Libraries\Startup\IAR</state>
+                    <state>$PROJ_DIR$\..\..\..\Libraries\Startup\core</state>
+                    <state>$PROJ_DIR$\..\..\..\Libraries\Startup\kinetis</state>
                     <state>$PROJ_DIR$\..\..\User</state>
-                    <state>$PROJ_DIR$\..\..\..\Libralies\Startup\core</state>
-                    <state>$PROJ_DIR$\..\..\..\Libralies\Startup</state>
                     <state>$PROJ_DIR$\..\..\Code</state>
+                    <state>$PROJ_DIR$\..\..\..\Libraries\Vcan</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -778,7 +777,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$\..\..\..\Libralies\Startup\config files\vcan_ROM_K60N512.icf</state>
+                    <state>$PROJ_DIR$\..\..\..\Libraries\Startup\config files\vcan_ROM_K60N512.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -2118,244 +2117,160 @@
         <group>
             <name>Chip</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\common.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\misc.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\misc.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_adc.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\misc.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_can.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_adc.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_conf.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_adc.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_dac.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_can.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_dma.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_can.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_DWT.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_dac.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_flash.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_dac.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_flexbus.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_dma.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_ftm.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_dma.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_gpio.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_DWT.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_i2c.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_DWT.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_lptmr.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_flash.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_mcg.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_FLASH.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_PIT.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_flexbus.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_port.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_ftm.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_rtc.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_FTM.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_spi.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_gpio.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_SysTick.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_gpio.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_uart.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_gpio_cfg.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\MK60_wdog.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_i2c.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_i2c.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_lptmr.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_lptmr.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_mcg.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_mcg.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_PIT.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_pit.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_port.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_port.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_rtc.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_rtc.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_spi.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_spi.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_SysTick.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_SysTick.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_uart.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_uart.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_wdog.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\MK60_wdog.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\vectors.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Chip\vectors.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Chip\vectors.c</name>
             </file>
         </group>
         <group>
             <name>Startup</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Startup\MK60_conf.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Startup\IAR\startup_MK60DZ10.s</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Startup\MK60_conf.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Startup\IAR\system_MK60DZ10.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Startup\IAR\startup_MK60DZ10.s</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Startup\IAR\system_MK60DZ10.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Startup\IAR\system_MK60DZ10.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Startup\IAR\system_MK60DZ10.h</name>
             </file>
         </group>
         <group>
             <name>Vcan</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_ASCII.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_ASCII.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_camera.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_BMP.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_camera.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_camera.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_computer.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_computer.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_computer.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\vcan_img2sd.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\vcan_img2sd.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_key.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_key.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_key_event.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_key.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_LCD.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_key_event.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_LCD_CH.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_LCD.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_LCD_ILI9325.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_LCD_CH.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_LCD_ILI9341.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_LCD_ILI9325.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_LCD_ST7735R.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_LED.C</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_LCD_ST7735S.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_MMA7455.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_LED.C</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_MMA7455.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_MMA7455.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_NRF24L0.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_NRF24L0.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_NRF24L0.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_NRF24L0_MSG.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_NRF24L0_MSG.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_OV7725_Eagle.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_OV7725_Eagle.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_OV7725_Wolf.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_OV7725_Eagle.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_RTC_count.C</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_OV7725_REG.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_SCCB.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_OV7725_Wolf.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\vcan_sd_app.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_RTC_count.C</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\Vcan_touch.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_RTC_count.h</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_TSL1401.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_SCCB.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_SCCB.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\vcan_sd_app.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\Vcan_touch.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_TSL1401.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Libralies\Vcan\VCAN_UI_VAR.c</name>
+                <name>$PROJ_DIR$\..\..\..\Libraries\Vcan\VCAN_UI_VAR.c</name>
             </file>
         </group>
     </group>
